@@ -4,5 +4,4 @@
   :dependencies [[buttle "0.1.1-SNAPSHOT"]
                  [org.postgresql/postgresql "9.4.1212"]]
   :main use-buttle.core
-  :profiles {:uberjar {:aot :all}}
-  )
+  :profiles {:uberjar {:aot :all}})
