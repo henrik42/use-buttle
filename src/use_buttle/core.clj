@@ -1,4 +1,5 @@
 (ns use-buttle.core
+  (:gen-class)
   (:require [buttle.proxy :as proxy])
   (:use buttle.driver-manager
         clojure.pprint))
@@ -36,6 +37,5 @@
              (.executeQuery "select * from pg_catalog.pg_tables where schemaname = 'pg_catalog'")
              (resultset-seq))))
 
-;; lein run jdbc:postgresql://127.0.0.1:6632/postgres <user> <password>
 (defn -main [& [target-url user password]]
   (pprint (select-pg-catalog-tables target-url user password)))

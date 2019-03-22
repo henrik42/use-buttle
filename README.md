@@ -1,36 +1,13 @@
 # use-buttle
 
-FIXME: description
+Example project that shows how to use _Buttle_ [1] as a lib.
 
-## Installation
-
-Download from http://example.com/FIXME.
-
-## Usage
-
-FIXME: explanation
-
-    $ java -jar use-buttle-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
+[1] https://github.com/henrik42/buttle
 
 ## Examples
 
-...
+In `src/use_buttle/core.clj` you can control, which method invocations
+get logged. For this need a running Postgres.
 
-### Bugs
+	lein run jdbc:postgresql://127.0.0.1:6632/postgres <user> <password>
 
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2019 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
